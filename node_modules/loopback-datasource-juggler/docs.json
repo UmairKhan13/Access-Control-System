@@ -1,0 +1,25 @@
+{
+    "content": [
+        "lib/dao.js",
+        "lib/scope.js",
+        "lib/relation-definition.js",
+        "lib/datasource.js",
+        "lib/model.js",
+        "lib/model-definition.js",
+        "lib/mixins.js",
+        "lib/date-string.js",
+        "lib/geo.js",
+        "lib/hooks.js",
+        "lib/include.js",
+        "lib/model-builder.js",
+        "lib/relations.js",
+        "lib/observer.js",
+        "lib/transaction.js",
+        "lib/validations.js"
+    ],
+    "codeSectionDepth": 4,
+    "assets": {
+      "/": "/docs",
+      "/docs": "/docs"
+    }
+}

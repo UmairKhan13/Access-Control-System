@@ -1,0 +1,51 @@
+{
+  "name": "loopback-connector",
+  "version": "4.11.1",
+  "description": "Building blocks for LoopBack connectors",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "author": "IBM Corp.",
+  "keywords": [
+    "StrongLoop",
+    "LoopBack",
+    "Connector"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/strongloop/loopback-connector"
+  },
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "posttest": "npm run lint",
+    "test": "mocha"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "async": "^3.2.0",
+    "bluebird": "^3.7.2",
+    "debug": "^4.1.1",
+    "msgpack5": "^4.2.0",
+    "strong-globalize": "^5.1.0",
+    "uuid": "^7.0.3"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-loopback": "^13.1.0",
+    "loopback-datasource-juggler": "^3.32.0",
+    "mocha": "^6.2.0"
+  },
+  "ci": {
+    "downstreamIgnoreList": [
+      "loopback-connector-db2z",
+      "loopback-connector-ibmi",
+      "loopback-connector-informix",
+      "loopback-connector-mqlight",
+      "loopback-connector-kv-extreme-scale"
+    ]
+  }
+}

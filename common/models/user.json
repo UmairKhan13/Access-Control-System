@@ -1,0 +1,21 @@
+{
+  "name": "user",
+  "base": "User",
+  "idInjection": true,
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "projects": {
+      "type": "hasMany",
+      "model": "project",
+      "foreignKey": "ownerId"
+    },
+    "teams": {
+      "type": "hasMany",
+      "model": "team",
+      "foreignKey": "ownerId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}

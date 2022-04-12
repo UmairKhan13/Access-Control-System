@@ -1,0 +1,62 @@
+{
+  "name": "strong-globalize",
+  "description": "StrongLoop Globalize - API",
+  "version": "5.1.0",
+  "keywords": [
+    "StrongLoop",
+    "globalize",
+    "cldr"
+  ],
+  "engines": {
+    "node": ">=8.9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strongloop/strong-globalize.git"
+  },
+  "author": "IBM Corp.",
+  "license": "Artistic-2.0",
+  "readmeFilename": "README.md",
+  "main": "index.js",
+  "browser": "browser.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "clean": "rimraf lib",
+    "build": "npm run clean && tsc -p tsconfig.json --outdir lib",
+    "prepublishOnly": "npm run build",
+    "pretest": "npm run build",
+    "test": "tap --bail --timeout=200 test/test-*.*"
+  },
+  "bugs": {
+    "url": "https://github.com/strongloop/strong-globalize/issues"
+  },
+  "dependencies": {
+    "accept-language": "^3.0.18",
+    "debug": "^4.1.1",
+    "globalize": "^1.5.0",
+    "lodash": "^4.17.15",
+    "md5": "^2.2.1",
+    "mkdirp": "^0.5.5",
+    "os-locale": "^5.0.0",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "@types/debug": "^4.1.5",
+    "@types/globalize": "0.0.36",
+    "@types/lodash": "^4.14.149",
+    "@types/md5": "^2.1.32",
+    "@types/mkdirp": "^1.0.0",
+    "@types/node": "^13.11.1",
+    "@types/yamljs": "^0.2.30",
+    "async": "^3.2.0",
+    "coveralls": "^3.0.11",
+    "intercept-stdout": "^0.1.2",
+    "mktmpdir": "^0.1.1",
+    "prettier": "^2.0.4",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.3",
+    "tap": "^14.10.7",
+    "typescript": "^3.8.3"
+  },
+  "gitHead": "d42c0bd1a43e0e0f4d3a483e28fdb8d0c17cb7cf"
+}

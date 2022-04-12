@@ -1,0 +1,33 @@
+{
+  "name": "loopback-example-access-control",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "scripts": {
+    "pretest": "jshint .",
+    "start": "node .",
+    "test": "mocha test/*test.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.10.1",
+    "compression": "^1.0.3",
+    "cors": "^2.8.1",
+    "loopback": "^3.0.0",
+    "loopback-boot": "^2.4.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.2.0",
+    "supertest": "^3.3.0"
+  },
+  "optionalDependencies": {
+    "loopback-component-explorer": "^2.1.0"
+  },
+  "devDependencies": {
+    "jshint": "^2.5.6",
+    "mocha": "^5.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strongloop/loopback-example-access-control"
+  },
+  "license": "MIT",
+  "author": "IBM Corp."
+}
